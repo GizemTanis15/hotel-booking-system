@@ -17,7 +17,8 @@ app.use(cors({
   origin:[
     "http://127.0.0.1:5500",  // local test için
     "http://localhost:5500",  // local test için
-    "https://hotel-booking-system-ten-jade.vercel.app" // ✅ buraya kendi Vercel URL'ini yaz
+    "https://hotel-booking-system-ten-jade.vercel.app", // ✅ buraya kendi Vercel URL'ini yaz
+    "https://hotel-booking-system-2-aay3.onrender.com",
   ],
   credentials: true
 }));
