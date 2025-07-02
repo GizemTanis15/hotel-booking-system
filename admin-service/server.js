@@ -14,7 +14,11 @@ const app = express();
 
 // ✅ CORS middleware'i en üstte tanımla
 app.use(cors({
-  origin: "http://127.0.0.1:5500",  // veya "http://localhost:5500"
+  origin:[
+    "http://127.0.0.1:5500",  // local test için
+    "http://localhost:5500",  // local test için
+    "https://hotel-booking-system-ten-jade.vercel.app" // ✅ buraya kendi Vercel URL'ini yaz
+  ],
   credentials: true
 }));
 
